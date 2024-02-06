@@ -7,31 +7,6 @@ body {
     background-color: pink;
 }
 
-#welcome {
-    text-align: center;
-    margin-top: 20px;
-}
-
-input[type="text"] {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button#startBtn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-}
-
-button#startBtn:hover {
-    background-color: darkred;
-}
-
 #valentine {
     text-align: center;
 }
