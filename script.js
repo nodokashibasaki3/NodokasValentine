@@ -23,23 +23,6 @@ let currentVariationIndex = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('startBtn').addEventListener('click', function() {
-        const userName = document.getElementById('userName').value;
-        alert(`Hello, ${userName}! Let's get started.`);
-
-        // Play a silent audio clip to unlock audio playback
-        const audioUnlock = new Audio('silent.mp3'); // Ensure you have a silent.mp3 file
-        audioUnlock.play()
-            .then(() => {
-                // Hide the welcome message and form
-                document.getElementById('welcome').style.display = 'none';
-
-                // Show the Valentine's Day content
-                document.getElementById('valentineContent').style.display = 'block';
-            })
-            .catch(e => console.error('Error unlocking audio:', e));
-    });
-
     const noBtn = document.getElementById('noBtn');
     noBtn.addEventListener('mouseover', handleNoHover);
     noBtn.addEventListener('click', handleNoClick);
